@@ -6,6 +6,17 @@ A Claude Code command for compressing files using ffmpeg.
 
 This command reduces file sizes for images, videos, and audio files using ffmpeg compression techniques.
 
+## Installation
+
+1. Copy `reduce-file-size.md` to your Claude Code commands directory:
+
+```bash
+mkdir -p ~/.claude/commands
+cp reduce-file-size.md ~/.claude/commands/
+```
+
+2. The command will be available immediately in Claude Code.
+
 ## Supported Formats
 
 - **Images**: png, jpg, jpeg, webp, gif
@@ -13,6 +24,8 @@ This command reduces file sizes for images, videos, and audio files using ffmpeg
 - **Audio**: mp3, wav, flac, aac, m4a
 
 ## Usage
+
+In Claude Code, run the command with:
 
 ```
 /reduce-file-size <file-path> [target-size]
@@ -33,7 +46,8 @@ This command reduces file sizes for images, videos, and audio files using ffmpeg
 
 ## Requirements
 
-- ffmpeg must be installed on your system
+- [Claude Code](https://claude.com/claude-code) CLI installed
+- ffmpeg installed on your system (`brew install ffmpeg` on macOS)
 
 ## License
 
